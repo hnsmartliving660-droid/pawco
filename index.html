@@ -3,6 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3039342416417780');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3039342416417780&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta name="google-site-verification" content="XBTbJ7gsXuY3OPhKMaDYEmABTl5wHYmCxsVLaIAEwXU" />
 <link rel="canonical" href="https://hnsmartliving660-droid.github.io/pawco/">
 <meta property="og:type" content="product">
@@ -497,6 +514,14 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 // sticky mobile bar after hero
 const hero=document.getElementById('buy'),bar=document.getElementById('mbar');
 new IntersectionObserver(([e])=>bar.classList.toggle('show',!e.isIntersecting),{threshold:0}).observe(hero);
+// Meta Pixel InitiateCheckout. Listener does not cancel navigation.
+document.querySelectorAll('a[data-checkout="stripe"]').forEach(function (link) {
+  link.addEventListener('click', function () {
+    try {
+      if (typeof fbq === 'function') fbq('track', 'InitiateCheckout');
+    } catch (ignore) {}
+  });
+});
 </script>
 </body>
 </html>
