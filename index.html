@@ -225,24 +225,6 @@ footer .logo{color:#fff;margin-bottom:12px}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
 .rv.in{opacity:1;transform:none}
 /* responsive */
-/* toy add-ons */
-.toys{background:#fff}
-.toy-grid{display:grid;gap:22px;margin-top:40px}
-.toy{background:var(--cream);border-radius:var(--r);padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column}
-.toy-main{border-radius:16px;overflow:hidden;background:#fff;aspect-ratio:1}
-.toy-main img{width:100%;height:100%;object-fit:cover}
-.toy-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
-.toy-thumbs button{border:2px solid transparent;border-radius:10px;overflow:hidden;padding:0;cursor:pointer;background:#fff;aspect-ratio:1}
-.toy-thumbs button.on{border-color:var(--teal)}
-.toy-thumbs img{width:100%;height:100%;object-fit:cover}
-.toy h3{font-size:1.2rem;margin:16px 0 6px}
-.toy p{color:var(--muted);font-size:.93rem}
-.toy ul{list-style:none;margin:10px 0 0;display:grid;gap:4px;font-size:.9rem}
-.toy ul li::before{content:"✓ ";color:var(--teal);font-weight:700}
-.toy .tprice{font-size:1.5rem;font-weight:800;margin:14px 0 10px}
-.toy .ship{font-size:.8rem;color:var(--muted);margin-top:10px;text-align:center}
-.toy-note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:22px}
-@media (min-width:760px){.toy-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:639px){
   section{padding:60px 0}
   .strip .row{gap:8px 18px;font-size:.82rem}
@@ -335,40 +317,6 @@ footer .logo{color:#fff;margin-bottom:12px}
     <span>💧 Circulating water</span><span>🌼 Flower spout</span><span>🧽 Easy to clean</span><span>🔌 USB powered</span><span>🐾 Made for cats</span>
   </div>
 </div>
-
-<!-- TOY ADD-ONS -->
-<section class="toys" id="toys">
-  <div class="wrap">
-    <div class="center rv">
-      <span class="eyebrow">Complete the setup</span>
-      <h2>Add a toy for playtime</h2>
-      <p class="lead">Fresh water plus a little daily play. Two simple toys to keep indoor cats moving.</p>
-    </div>
-    <div class="toy-grid">
-      <div class="toy rv">
-        <div class="toy-main"><img src="assets/toys/ball-1.webp" alt="Tail chaser ball cat toy" loading="lazy" width="640" height="640"></div>
-        <div class="toy-thumbs"><button type="button" class="on" data-src="assets/toys/ball-1.webp" aria-label="Show photo 1"><img src="assets/toys/ball-1.webp" alt="Tail chaser ball cat toy, photo 1" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/ball-2.webp" aria-label="Show photo 2"><img src="assets/toys/ball-2.webp" alt="Tail chaser ball cat toy, photo 2" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/ball-3.webp" aria-label="Show photo 3"><img src="assets/toys/ball-3.webp" alt="Tail chaser ball cat toy, photo 3" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/ball-4.webp" aria-label="Show photo 4"><img src="assets/toys/ball-4.webp" alt="Tail chaser ball cat toy, photo 4" loading="lazy" width="120" height="120"></button></div>
-        <h3>Tail Chaser Ball</h3>
-        <p>A rolling ball with a playful tail that moves on its own and changes direction when it bumps into furniture.</p>
-        <ul><li>Two speed settings, one button</li><li>Rolls 360° and turns at obstacles</li><li>USB rechargeable (150 mAh built-in battery)</li><li>Choose blue or orange at checkout</li></ul>
-        <div class="tprice">$14.99</div>
-        <a href="https://buy.stripe.com/eVq28r2D5e8J1B685Hbwk02" class="btn block" data-checkout="stripe" data-value="14.99" data-item="Tail Chaser Ball">Buy now – $14.99</a>
-        <p class="ship">Ships separately from our China warehouse and arrives in about 7–12 business days.</p>
-      </div>
-      <div class="toy rv">
-        <div class="toy-main"><img src="assets/toys/feather-1.webp" alt="Spinning feather cat toy" loading="lazy" width="640" height="640"></div>
-        <div class="toy-thumbs"><button type="button" class="on" data-src="assets/toys/feather-1.webp" aria-label="Show photo 1"><img src="assets/toys/feather-1.webp" alt="Spinning feather cat toy, photo 1" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/feather-2.webp" aria-label="Show photo 2"><img src="assets/toys/feather-2.webp" alt="Spinning feather cat toy, photo 2" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/feather-3.webp" aria-label="Show photo 3"><img src="assets/toys/feather-3.webp" alt="Spinning feather cat toy, photo 3" loading="lazy" width="120" height="120"></button><button type="button" data-src="assets/toys/feather-4.webp" aria-label="Show photo 4"><img src="assets/toys/feather-4.webp" alt="Spinning feather cat toy, photo 4" loading="lazy" width="120" height="120"></button></div>
-        <h3>Spinning Feather Toy</h3>
-        <p>An electric tumbler toy with a feather that spins 360°. Batted over, it rocks back upright to keep the game going.</p>
-        <ul><li>Feather spins 360°</li><li>Tumbler base stands back up</li><li>Durable ABS body, about 8 × 5.5 cm</li><li>On/off switch</li></ul>
-        <div class="tprice">$16.99</div>
-        <a href="https://buy.stripe.com/28EfZhcdFggR2FaclXbwk03" class="btn block" data-checkout="stripe" data-value="16.99" data-item="Spinning Feather Toy">Buy now – $16.99</a>
-        <p class="ship">Ships separately from our China warehouse and arrives in about 7–12 business days.</p>
-      </div>
-    </div>
-    <p class="toy-note">Toys are sold separately from the Flow Fountain and ship in their own package. Free shipping.</p>
-  </div>
-</section>
 
 <!-- PROBLEM / SOLUTION -->
 <section>
@@ -497,7 +445,7 @@ footer .logo{color:#fff;margin-bottom:12px}
       <details><summary>How often should I replace the filter?</summary><p>Replace the sponge filter when it looks discolored or worn — usually every few weeks, depending on how many pets use the fountain.</p></details>
       <details><summary>Is it noisy?</summary><p>The small pump runs quietly, and the main sound is the gentle trickle of water from the flower spout. Keeping the water topped up helps it stay quiet.</p></details>
       <details><summary>How is it powered?</summary><p>It comes with a USB cable that plugs into any standard USB wall adapter or power bank.</p></details>
-      <details><summary>Where do you ship and how long does it take?</summary><p>We process orders within 1–3 business days. After that, delivery is typically 5–10 business days in the US and 7–14 business days in the EU. Shipping is free within the US. Cat toys ship separately from our China warehouse and usually arrive in about 7–12 business days. See our <a href="shipping.html">shipping policy</a> for details.</p></details>
+      <details><summary>Where do you ship and how long does it take?</summary><p>We process orders within 1–3 business days. After that, delivery is typically 5–10 business days in the US and 7–14 business days in the EU. Shipping is free within the US. See our <a href="shipping.html">shipping policy</a> for details.</p></details>
       <details><summary>What if my cat doesn't like it?</summary><p>Some cats need a few days to get used to something new. If it's still not a fit, you can return it within 14 days of delivery. You pay return shipping unless the item is defective or arrived damaged. See our <a href="refund-policy.html">refund policy</a> for details.</p></details>
     </div>
   </div>
@@ -542,7 +490,7 @@ footer .logo{color:#fff;margin-bottom:12px}
         <a href="index.html" class="logo"><span class="mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><ellipse cx="6" cy="9" rx="2.2" ry="2.8"/><ellipse cx="10.2" cy="5.6" rx="2.2" ry="2.8"/><ellipse cx="14.4" cy="5.6" rx="2.2" ry="2.8"/><ellipse cx="18.4" cy="9" rx="2.2" ry="2.8"/><path d="M12.2 11.2c-3.4 0-6.4 4.3-6.4 6.6 0 1.9 1.6 2.6 3.2 2.6 1.3 0 2.1-.6 3.2-.6s1.9.6 3.2.6c1.6 0 3.2-.7 3.2-2.6 0-2.3-3-6.6-6.4-6.6z"/></svg></span>Paw <em>&amp;</em> Co</a>
         <p>Simple, good-looking essentials for happy, healthy pets.</p>
       </div>
-      <div><h4>Shop</h4><ul><li><a href="#buy">Flow Fountain</a></li><li><a href="#toys">Cat toys</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="#buy">Flow Fountain</a></li></ul></div>
       <div><h4>Help</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="contact.html">Contact us</a></li><li><a href="contact.html">Track your order</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="shipping.html">Shipping policy</a></li><li><a href="refund-policy.html">Refund policy</a></li><li><a href="privacy-policy.html">Privacy policy</a></li><li><a href="terms-of-service.html">Terms of service</a></li></ul></div>
     </div>
@@ -574,24 +522,12 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 // sticky mobile bar after hero
 const hero=document.getElementById('buy'),bar=document.getElementById('mbar');
 new IntersectionObserver(([e])=>bar.classList.toggle('show',!e.isIntersecting),{threshold:0}).observe(hero);
-// toy galleries
-document.querySelectorAll('.toy').forEach(function (card) {
-  var main = card.querySelector('.toy-main img');
-  card.querySelectorAll('.toy-thumbs button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      card.querySelectorAll('.toy-thumbs button').forEach(function (x) { x.classList.remove('on'); });
-      b.classList.add('on'); main.src = b.dataset.src;
-    });
-  });
-});
 // Meta Pixel InitiateCheckout. Listener does not cancel navigation.
 document.querySelectorAll('a[data-checkout="stripe"]').forEach(function (link) {
   link.addEventListener('click', function () {
     try {
-      var value = parseFloat(link.getAttribute('data-value')) || 49.99;
-      var item = link.getAttribute('data-item') || 'Paw & Co Flow Fountain';
-      if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {currency: 'USD', value: value, content_name: item});
-      if (typeof gtag === 'function') gtag('event', 'begin_checkout', {currency: 'USD', value: value, items: [{item_name: item, price: value, quantity: 1}]});
+      if (typeof fbq === 'function') fbq('track', 'InitiateCheckout');
+      if (typeof gtag === 'function') gtag('event', 'begin_checkout', {currency: 'USD', value: 49.99});
     } catch (ignore) {}
   });
 });
