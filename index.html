@@ -32,14 +32,14 @@ src="https://www.facebook.com/tr?id=3039342416417780&ev=PageView&noscript=1"
 <link rel="canonical" href="https://hnsmartliving660-droid.github.io/pawco/">
 <meta property="og:type" content="product">
 <meta property="og:title" content="Paw &amp; Co Flow Fountain">
-<meta property="og:description" content="Fresh, filtered, flowing water your cat wants to drink. Free US shipping and 14-day returns.">
+<meta property="og:description" content="Fresh, filtered, flowing water your cat wants to drink. Free shipping in the United States only, and a 14-day guarantee.">
 <meta property="og:url" content="https://hnsmartliving660-droid.github.io/pawco/">
 <meta property="og:image" content="https://hnsmartliving660-droid.github.io/pawco/og-image.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Product","name":"Paw & Co Flow Fountain","description":"Quiet, filtered pet water fountain that keeps water moving so cats and dogs drink more. Frosted White.","brand":{"@type":"Brand","name":"Paw & Co"},"color":"Frosted White","image":["https://hnsmartliving660-droid.github.io/pawco/og-image.jpg"],"offers":{"@type":"Offer","url":"https://hnsmartliving660-droid.github.io/pawco/","priceCurrency":"USD","price":"49.99","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}}
 </script>
 <title>Paw &amp; Co Flow Fountain | Fresh, Flowing Water for Your Cat</title>
-<meta name="description" content="The Paw & Co Flow Fountain keeps water moving, filtered and inviting so your cat wants to drink. Free US shipping and 14-day returns.">
+<meta name="description" content="The Paw & Co Flow Fountain keeps water moving, filtered and inviting so your cat wants to drink. Free shipping in the United States only, and a 14-day guarantee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -113,6 +113,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,246,238,.88);backdro
 .variants button i{width:18px;height:18px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.12)}
 .variants button.on{border-color:var(--teal)}
 .pay-note{margin:12px 0 0;text-align:center;font-size:.82rem;color:var(--muted);font-weight:500}
+.guarantee-line{margin:10px 0 0;font-size:.82rem;color:var(--muted);font-weight:500;line-height:1.45}
+.guarantee-line a{color:var(--teal-d);font-weight:600}
+.hero .guarantee-line,.final .guarantee-line,.toy .guarantee-line{text-align:center}
+@media (min-width:900px){.final .guarantee-line{text-align:left}}
 .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
 .trust div{background:#fff;border-radius:16px;padding:12px 8px;text-align:center;font-size:.78rem;font-weight:600;line-height:1.3;box-shadow:var(--sh)}
 .trust svg{margin:0 auto 6px;display:block}
@@ -241,7 +245,16 @@ footer .logo{color:#fff;margin-bottom:12px}
 .toy .tprice{font-size:1.5rem;font-weight:800;margin:14px 0 10px}
 .toy .ship{font-size:.8rem;color:var(--muted);margin-top:10px;text-align:center}
 .toy-note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:22px}
-@media (min-width:760px){.toy-grid{grid-template-columns:1fr 1fr}}
+.toy.bundle{grid-column:1 / -1;display:grid;gap:22px;align-items:center}
+.bundle-photos{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
+.bundle-photos img{width:100%;height:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:16px}
+.bundle-plus{width:36px;height:36px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.35rem;line-height:1}
+.bundle .price{margin:16px 0 14px}
+.bundle h3{font-size:1.35rem;margin-top:0}
+@media (min-width:760px){
+  .toy-grid{grid-template-columns:1fr 1fr}
+  .toy.bundle{grid-template-columns:1.05fr .95fr;gap:32px;padding:28px}
+}
 /* responsive */
 @media (max-width:639px){
   section{padding:60px 0}
@@ -280,7 +293,7 @@ footer .logo{color:#fff;margin-bottom:12px}
 </head>
 <body>
 
-<div class="announce">Launch offer: free US shipping</div>
+<div class="announce">Launch offer: free shipping in the United States only</div>
 
 <header>
   <div class="wrap nav">
@@ -323,9 +336,10 @@ footer .logo{color:#fff;margin-bottom:12px}
       <!-- STRIPE_LINK -->
       <a href="https://buy.stripe.com/14AdR97XpaWxbbGclXbwk01" class="btn block" data-checkout="stripe">Buy now</a>
       <p class="pay-note">Secure payment by Stripe (cards, Apple Pay, Google&nbsp;Pay)</p>
+      <p class="guarantee-line">14-day guarantee: request a refund within 14 days of delivery if you are not satisfied. <a href="refund-policy.html">Refund policy</a>.</p>
       <div class="trust">
-        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2a8c88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>Free US shipping</div>
-        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2a8c88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>14-day returns</div>
+        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2a8c88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>Free shipping, United States only</div>
+        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2a8c88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>14-day guarantee</div>
       </div>
     </div>
   </div>
@@ -347,6 +361,20 @@ footer .logo{color:#fff;margin-bottom:12px}
       <p class="lead">Fresh water plus a little daily play. Two simple toys to keep indoor cats moving.</p>
     </div>
     <div class="toy-grid">
+      <article class="toy bundle rv" id="bundle">
+        <div class="bundle-photos">
+          <img src="og-image.jpg" alt="Paw &amp; Co Flow Fountain" width="1200" height="1200" loading="lazy">
+          <span class="bundle-plus" aria-hidden="true">+</span>
+          <img src="assets/toys/ball-1.webp" alt="Tail Chaser Ball with Tail" width="800" height="800" loading="lazy">
+        </div>
+        <div>
+          <h3>Flow Fountain + Tail Chaser Ball Bundle</h3>
+          <p>The Flow Fountain and the Tail Chaser Ball with Tail, together as a set. Free US shipping and a 14-day guarantee. Items may arrive in separate packages.</p>
+          <div class="price"><span class="now">$79.99</span><span class="was">$89.98</span><span class="save">Save $9.99</span></div>
+          <a href="https://buy.stripe.com/fZubJ1gtV5Cd5Rm71Dbwk06" class="btn block" data-checkout="stripe" data-value="79.99" data-item="Flow Fountain + Tail Chaser Ball Bundle">Buy now – $79.99</a>
+          <p class="guarantee-line">14-day guarantee: request a refund within 14 days of delivery if you are not satisfied. <a href="refund-policy.html">Refund policy</a>.</p>
+        </div>
+      </article>
       <div class="toy rv">
         <div class="toy-main"><img src="assets/toys/ball-1.webp" alt="Orange tail chaser ball with an attached plush tail" loading="lazy" width="800" height="800"></div>
         <h3>Tail Chaser Ball with Tail</h3>
@@ -354,6 +382,7 @@ footer .logo{color:#fff;margin-bottom:12px}
         <ul><li>Attached plush tail</li><li>Slow, fast, and smart modes</li><li>USB-C rechargeable (150 mAh battery)</li><li>Food-grade silicone body</li></ul>
         <div class="tprice">$39.99</div>
         <a href="https://buy.stripe.com/14AfZh3H9fcNdjO99Lbwk04" class="btn block" data-checkout="stripe" data-value="39.99" data-item="Tail Chaser Ball with Tail">Buy now – $39.99</a>
+        <p class="guarantee-line">14-day guarantee: request a refund within 14 days of delivery if you are not satisfied. <a href="refund-policy.html">Refund policy</a>.</p>
         <p class="ship">Ships from our US warehouse and arrives in about 3–6 business days.</p>
       </div>
       <div class="toy rv">
@@ -364,10 +393,11 @@ footer .logo{color:#fff;margin-bottom:12px}
         <ul><li>Spinning butterfly on a flexible wire</li><li>Flower base, about 8 cm across</li><li>Electric</li><li>Colors may vary</li></ul>
         <div class="tprice">$19.99</div>
         <a href="https://buy.stripe.com/7sYcN5gtVc0B6Vq1Hjbwk05" class="btn block" data-checkout="stripe" data-value="19.99" data-item="Fluttering Butterfly Cat Toy">Buy now – $19.99</a>
-        <p class="ship">Ships separately from our China warehouse and arrives in about 7–12 business days.</p>
+        <p class="guarantee-line">14-day guarantee: request a refund within 14 days of delivery if you are not satisfied. <a href="refund-policy.html">Refund policy</a>.</p>
+        <p class="ship">Ships separately from an international warehouse and arrives in about 7–12 business days.</p>
       </div>
     </div>
-    <p class="toy-note">Toys are sold separately from the Flow Fountain and ship in their own package. The ball ships from the US; the butterfly ships from China. Free shipping.</p>
+    <p class="toy-note">Toys are sold separately from the Flow Fountain and ship in their own package. The ball ships from the US; the butterfly ships from an international warehouse and arrives in about 7–12 business days. Free shipping applies to the United States only. International shipping availability and costs are shown at checkout.</p>
   </div>
 </section>
 
@@ -505,8 +535,8 @@ footer .logo{color:#fff;margin-bottom:12px}
       <details><summary>How often should I replace the filter?</summary><p>Replace the sponge filter when it looks discolored or worn — usually every few weeks, depending on how many pets use the fountain.</p></details>
       <details><summary>Is it noisy?</summary><p>The small pump runs quietly, and the main sound is the gentle trickle of water from the flower spout. Keeping the water topped up helps it stay quiet.</p></details>
       <details><summary>How is it powered?</summary><p>It comes with a USB cable that plugs into any standard USB wall adapter or power bank.</p></details>
-      <details><summary>Where do you ship and how long does it take?</summary><p>We process orders within 1–3 business days. After that, delivery is typically 5–10 business days in the US and 7–14 business days in the EU. Shipping is free within the US. The Tail Chaser Ball with Tail ships from our US warehouse and usually arrives in about 3–6 business days. The Fluttering Butterfly Cat Toy ships separately from our China warehouse and usually arrives in about 7–12 business days. See our <a href="shipping.html">shipping policy</a> for details.</p></details>
-      <details><summary>What if my cat doesn't like it?</summary><p>Some cats need a few days to get used to something new. If it's still not a fit, you can return it within 14 days of delivery. You pay return shipping unless the item is defective or arrived damaged. See our <a href="refund-policy.html">refund policy</a> for details.</p></details>
+      <details><summary>Where do you ship and how long does it take?</summary><p>We process orders within 1–3 business days. After that, delivery in the United States is typically 5–10 business days. Free shipping applies to the United States only. International shipping availability and costs are shown at checkout. The Tail Chaser Ball with Tail ships from our US warehouse and usually arrives in about 3–6 business days. The Fluttering Butterfly Cat Toy ships separately from an international warehouse and usually arrives in about 7–12 business days. See our <a href="shipping.html">shipping policy</a> for details.</p></details>
+      <details><summary>What is the 14-day guarantee?</summary><p>14-day guarantee: you can request a refund within 14 days of delivery if you are not satisfied. Email <a href="mailto:hnsmartliving660@gmail.com">hnsmartliving660@gmail.com</a> with your order details. You pay return shipping unless the item is defective, arrived damaged, or we sent the wrong item. See our <a href="refund-policy.html">refund policy</a>.</p></details>
     </div>
   </div>
 </section>
@@ -515,10 +545,10 @@ footer .logo{color:#fff;margin-bottom:12px}
 <section style="padding-top:0">
   <div class="wrap">
     <div class="guar rv">
-      <div class="seal"><div><b>14</b>DAY<br>HAPPY CAT<br>PROMISE</div></div>
+      <div class="seal"><div><b>14</b>DAY<br>GUARANTEE</div></div>
       <div>
-        <h2>14-day returns</h2>
-        <p>You can return the Flow Fountain within 14 days of delivery. You pay return shipping unless the item is defective or arrived damaged. See our <a href="refund-policy.html">refund policy</a> for details.</p>
+        <h2>14-day guarantee</h2>
+        <p>Request a refund within 14 days of delivery if you are not satisfied. You pay return shipping unless the item is defective or arrived damaged. See our <a href="refund-policy.html">refund policy</a>.</p>
       </div>
       <!-- STRIPE_LINK -->
       <a href="https://buy.stripe.com/14AdR97XpaWxbbGclXbwk01" class="btn" data-checkout="stripe">Buy now</a>
@@ -534,10 +564,11 @@ footer .logo{color:#fff;margin-bottom:12px}
       <div>
         <span class="eyebrow">Flow Fountain</span>
         <h2>Give your cat fresher water today</h2>
-        <p class="lead" style="margin-top:10px">Launch price $49.99. Free US shipping and 14-day returns.</p>
+        <p class="lead" style="margin-top:10px">Launch price $49.99. Free shipping in the United States only, and a 14-day guarantee.</p>
         <div class="price"><span class="launch">Launch price</span><span class="now">$49.99</span></div>
         <!-- STRIPE_LINK -->
         <a href="https://buy.stripe.com/14AdR97XpaWxbbGclXbwk01" class="btn" style="margin-top:12px" data-checkout="stripe">Buy now</a>
+        <p class="guarantee-line">14-day guarantee: request a refund within 14 days of delivery if you are not satisfied. <a href="refund-policy.html">Refund policy</a>.</p>
       </div>
     </div>
   </div>
@@ -549,8 +580,9 @@ footer .logo{color:#fff;margin-bottom:12px}
       <div>
         <a href="index.html" class="logo"><span class="mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><ellipse cx="6" cy="9" rx="2.2" ry="2.8"/><ellipse cx="10.2" cy="5.6" rx="2.2" ry="2.8"/><ellipse cx="14.4" cy="5.6" rx="2.2" ry="2.8"/><ellipse cx="18.4" cy="9" rx="2.2" ry="2.8"/><path d="M12.2 11.2c-3.4 0-6.4 4.3-6.4 6.6 0 1.9 1.6 2.6 3.2 2.6 1.3 0 2.1-.6 3.2-.6s1.9.6 3.2.6c1.6 0 3.2-.7 3.2-2.6 0-2.3-3-6.6-6.4-6.6z"/></svg></span>Paw <em>&amp;</em> Co</a>
         <p>Simple, good-looking essentials for happy, healthy pets.</p>
+        <p style="margin-top:10px">Free shipping applies to the United States only. International shipping availability and costs are shown at checkout.</p>
       </div>
-      <div><h4>Shop</h4><ul><li><a href="#buy">Flow Fountain</a></li><li><a href="#toys">Cat toys</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="#buy">Flow Fountain</a></li><li><a href="#bundle">Fountain + ball bundle</a></li><li><a href="#toys">Cat toys</a></li></ul></div>
       <div><h4>Help</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="contact.html">Contact us</a></li><li><a href="contact.html">Track your order</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="shipping.html">Shipping policy</a></li><li><a href="refund-policy.html">Refund policy</a></li><li><a href="privacy-policy.html">Privacy policy</a></li><li><a href="terms-of-service.html">Terms of service</a></li></ul></div>
     </div>
