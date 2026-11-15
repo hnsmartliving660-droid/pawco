@@ -15,7 +15,7 @@
   will-change:transform;
 }
 .g-carousel figure{
-  border-radius:var(--r);
+  border-radius:var(--r, 4px);
   overflow:hidden;
   position:relative;
   aspect-ratio:1;
